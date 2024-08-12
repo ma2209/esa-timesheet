@@ -1,0 +1,77 @@
+/* Basic styles for the body and page layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 70px; /* Adjust this value based on header height */
+}
+
+/* Styles for the header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Styles for the main content area */
+main {
+  padding: 20px;
+  margin-top: 45px; /* Ensures content doesn't overlap with the header */
+}
+
+/* Styles for tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Styles for form elements */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+select,
+button {
+  margin-top: 5px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Timesheet</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ESA</h1>
+      <!--<h3>Elite Sales and Acquisitions</h3>-->
+    </header>
+    <main>
+      <h1>Employee Timesheet</h1>
+      <form id="timesheet-form">
+        <label for="team">Team:</label>
+        <select id="team" name="team" required>
+          <!-- Options will be populated here -->
+        </select>
+
+        <label for="employeeName">Employee Name:</label>
+        <select id="employeeName" name="employeeName" required>
+          <!-- Options will be populated based on team selection -->
+        </select>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="hoursWorked">Hours Worked:</label>
+        <input
+          type="number"
+          id="hoursWorked"
+          name="hoursWorked"
+          min="0"
+          step="0.01"
+          required
+        />
+
+        <label for="leads">Leads:</label>
+        <input
+          type="number"
+          id="leads"
+          name="leads"
+          min="0"
+          step="1"
+          required
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <h2>Timesheet Records</h2>
+      <table id="timesheet-table" border="1">
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>Employee Name</th>
+            <th>Date</th>
+            <th>Hours Worked</th>
+            <th>Leads</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Records will be added here -->
+        </tbody>
+      </table>
+
+      <h2>Total Hours and Leads by Each Employee</h2>
+      <table id="summary-table" border="1">
+        <thead>
+          <tr>
+            <th>Employee Name</th>
+            <th>Total Hours</th>
+            <th>Total Leads</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Summary will be added here -->
+        </tbody>
+      </table>
+
+      <h2>Total Hours and Leads by Each Team</h2>
+      <table id="team-summary-table" border="1">
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>Total Hours</th>
+            <th>Total Leads</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Team summary will be added here -->
+        </tbody>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
