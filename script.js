@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Define teams and their respective employees
   const teams = {
+    Team: [""],
     Bahaa: ["A", "B"],
     Abdulrahman: ["C", "D"],
     Nirvana: ["E", "F"],
